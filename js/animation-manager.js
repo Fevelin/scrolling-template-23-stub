@@ -31,10 +31,10 @@ const callback = (entries, observer) => {
      */
     for(const entry of entries) {
         if(entry.isIntersecting) {
-            entry.target.classList.add("bottom-zig-zag");
+            entry.target.classList.add("active");
         }
         else {
-            entry.target.classList.remove("bottom-zig-zag");
+            entry.target.classList.remove("active");
         }
     }
 }
